@@ -1,4 +1,9 @@
 package com.weather.sdk.mode;
 
-public class SDKMode {
+import com.weather.sdk.WeatherSDK;
+
+public interface SDKMode {
+    void start(WeatherSDK sdk);
+    void stop();
+    boolean isPolling();
 }
